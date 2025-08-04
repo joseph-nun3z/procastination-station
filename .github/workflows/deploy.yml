@@ -1,0 +1,160 @@
+name: Deploy Quartz site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for git info
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      
+      - name: Clone Quartz
+        run: |
+          cd ..
+          git clone https://github.com/jackyzha0/quartz.git
+          cd quartz
+          npm install
+      
+      - name: Configure Quartz
+        run: |
+          cd ../quartz
+          # Remove default content and link to our campaign vault
+          rm -rf content
+          ln -s ${{ github.workspace }} content
+          
+          # Update configuration
+          cat > quartz.config.ts << 'EOF'
+          import { QuartzConfig } from "./quartz/cfg"
+          import * as Plugin from "./quartz/plugins"
+          
+          const config: QuartzConfig = {
+            configuration: {
+              pageTitle: "Curse of Strahd Reloaded",
+              pageTitleSuffix: " - Campaign Wiki",
+              enableSPA: true,
+              enablePopovers: true,
+              analytics: {
+                provider: "plausible",
+              },
+              locale: "en-US",
+              baseUrl: "joseph-nun3z.github.io/procastination-station",
+              ignorePatterns: ["private", "templates", ".obsidian", "scripts", ".github"],
+              defaultDateType: "modified",
+              theme: {
+                fontOrigin: "googleFonts",
+                cdnCaching: true,
+                typography: {
+                  header: "Schibsted Grotesk",
+                  body: "Source Sans Pro",
+                  code: "IBM Plex Mono",
+                },
+                colors: {
+                  lightMode: {
+                    light: "#faf8f8",
+                    lightgray: "#e5e5e5",
+                    gray: "#b8b8b8",
+                    darkgray: "#4e4e4e",
+                    dark: "#2b2b2b",
+                    secondary: "#284b63",
+                    tertiary: "#84a59d",
+                    highlight: "rgba(143, 159, 169, 0.15)",
+                    textHighlight: "#fff23688",
+                  },
+                  darkMode: {
+                    light: "#161618",
+                    lightgray: "#393639",
+                    gray: "#646464",
+                    darkgray: "#d4d4d4",
+                    dark: "#ebebec",
+                    secondary: "#7b97aa",
+                    tertiary: "#84a59d",
+                    highlight: "rgba(143, 159, 169, 0.15)",
+                    textHighlight: "#fff23688",
+                  },
+                },
+              },
+            },
+            plugins: {
+              transformers: [
+                Plugin.FrontMatter(),
+                Plugin.CreatedModifiedDate({
+                  priority: ["frontmatter", "filesystem"],
+                }),
+                Plugin.SyntaxHighlighting({
+                  theme: {
+                    light: "github-light",
+                    dark: "github-dark",
+                  },
+                  keepBackground: false,
+                }),
+                Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
+                Plugin.GitHubFlavoredMarkdown(),
+                Plugin.TableOfContents(),
+                Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
+                Plugin.Description(),
+                Plugin.Latex({ renderEngine: "katex" }),
+              ],
+              filters: [Plugin.RemoveDrafts()],
+              emitters: [
+                Plugin.AliasRedirects(),
+                Plugin.ComponentResources(),
+                Plugin.ContentPage(),
+                Plugin.FolderPage(),
+                Plugin.TagPage(),
+                Plugin.ContentIndex({
+                  enableSiteMap: true,
+                  enableRSS: true,
+                }),
+                Plugin.Assets(),
+                Plugin.Static(),
+                Plugin.NotFoundPage(),
+              ],
+            },
+          }
+          
+          export default config
+          EOF
+      
+      - name: Build site
+        run: |
+          cd ../quartz
+          npx quartz build
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '../quartz/public'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-22.04
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
