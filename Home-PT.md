@@ -3,63 +3,56 @@
 Bem-vindos à wiki da campanha **Curse of Strahd Reloaded**! Este cofre serve como uma base de conhecimento abrangente para a nossa jornada através do reino sombrio de Barovia.
 
 ## 🌐 Idiomas
-- **[[Home|🇺🇸 English]]** 
+- **[[index|🇺🇸 English]]** 
 - **[[Home-PT|🇵🇹 Português]]** (atual)
 
 ## Navegação Rápida
 
 ### 🎭 Personagens
-- **[[PT/Characters/PCs/|Personagens dos Jogadores]]** - As almas corajosas presas em Barovia
-- **[[PT/Characters/NPCs/|Personagens Não-Jogadores]]** - Aliados, inimigos e todos os outros
+- **[[PT/Characters/NPCs/Ismark Kolyanovich|Ismark Kolyanovich]]** - Filho do burgomestre, defensor da aldeia
+- **[[PT/Characters/NPCs/Ireena Kolyana|Ireena Kolyana]]** - Filha adotiva, atormentada por pesadelos
+- **[[PT/Characters/NPCs/Kolyan Indirovich|Kolyan Indirovich]]** - Burgomestre da aldeia
 
 ### 🏰 Localizações
-- **[[PT/Locations/Barovia/|Região de Barovia]]** - A terra amaldiçoada
-- **[[PT/Locations/Castle Ravenloft/|Castelo Ravenloft]]** - A fortaleza de Strahd
-- **[[PT/Locations/Villages/|Aldeias e Cidades]]** - Assentamentos dos condenados
-- **[[PT/Locations/Other/|Outras Localizações]]** - Masmorras, marcos e mais
+- **[[EN/Locations/Villages/Village of Barovia/Village of Barovia|Aldeia de Barovia]]** - Assentamento central e centro comunitário
+- **[[PT/Locations/Villages/|Aldeias e Cidades]]** - Outros assentamentos (a serem explorados)
+- **[[PT/Locations/Other/|Outras Localizações]]** - Masmorras, marcos e mais (a serem descobertos)
 
-### ⚔️ Itens e Equipamentos
-- **[[PT/Items/Magic Items/|Itens Mágicos]]** - Artefatos e armas encantados
-- **[[PT/Items/Mundane Items/|Itens Mundanos]]** - Equipamentos e suprimentos regulares
+### ⚔️ Equipamentos e Referências
+- **[[Shared/5e-Reference/Index|Referências de Dados 5e]]** - Mecânicas de jogo e blocos de estatísticas
+- **[[Shared/5e-Reference/Veteran|Veterano]]** - Bloco de estatísticas comum para guerreiros
+- **[[Shared/5e-Reference/Longsword|Espada Longa]]** - Estatísticas de armas
 
-### 📚 Lore e Conhecimento
-- **[[PT/Lore/History/|História]]** - O passado sombrio de Barovia
-- **[[PT/Lore/Legends/|Lendas e Mitos]]** - Histórias e folclore
-- **[[PT/Lore/Organizations/|Organizações]]** - Grupos e facções
+### 📚 Recursos da Campanha
+- **[[PT/Templates/Modelo NPC|Modelo NPC]]** - Para criar personagens não-jogadores
+- **[[PT/Templates/Modelo Localização|Modelo Localização]]** - Para lugares e localizações
+- **[[PT/Templates/Modelo Notas de Sessão|Modelo Sessão]]** - Para resumos de sessões
+- **[[Data Extraction Guide|Extração de Dados 5e]]** - Como adicionar mais referências
 
-### 🎲 Gestão da Campanha
-- **[[PT/Sessions/Session Notes/|Notas de Sessão]]** - Resumos detalhados das sessões
-- **[[PT/Sessions/Planning/|Planeamento]]** - Sessões futuras e preparação
-- **[[PT/Mechanics/Rules/|Regras e Mecânicas]]** - Regras do jogo e esclarecimentos
-- **[[PT/Mechanics/Homebrew/|Conteúdo Homebrew]]** - Regras e conteúdo personalizado
-
-### 📖 Referências
-- **[[Shared/Maps/|Mapas]]** - Referências visuais e mapas de batalha
-- **[[PT/References/Handouts/|Handouts]]** - Folhetos e documentos para jogadores
+### 🛠️ Utilitários
+- **[[Language Guide|Guia Multi-Idioma]]** - Como usar o sistema EN/PT
+- **[[scripts/README|Scripts de Dados]]** - Documentação técnica
 
 ## Atualizações Recentes
-<!-- Adicione links para páginas modificadas recentemente aqui -->
+- **[[PT/Characters/NPCs/Ismark Kolyanovich|Ismark Kolyanovich]]** - Atualizado para cronologia atual da campanha
+- **[[PT/Characters/NPCs/Ireena Kolyana|Ireena Kolyana]]** - Adicionado com folclore de vampiros
+- **[[PT/Characters/NPCs/Kolyan Indirovich|Kolyan Indirovich]]** - Perfil do personagem burgomestre
+- **[[EN/Locations/Villages/Village of Barovia/Village of Barovia|Aldeia de Barovia]]** - Detalhes do assentamento central
+- **[[Shared/5e-Reference/Index|Referências 5e]]** - Sistema de extração de dados do jogo
 
 ## Estado da Campanha
-- **Sessão Atual:** 
-- **Localização Atual:** 
+- **Sessão Atual:** Pós-Defesa da Barricada
+- **Localização Atual:** [[EN/Locations/Villages/Village of Barovia/Village of Barovia|Aldeia de Barovia]]
 - **Tramas Ativas:**
-  - 
-  - 
-  - 
+  - Pesadelos misteriosos de Ireena e perseguidor
+  - Defesa da aldeia e cooperação comunitária
+  - Reclusão crescente do burgomestre
 
 ## Estatísticas Rápidas
 - **Nível do Grupo:** 
 - **Mortes:** 
 - **Dias em Barovia:** 
 
-## Modelos
-Use estes modelos para criar novo conteúdo:
-- **[[PT/Templates/Modelo PC]]** - Para personagens dos jogadores
-- **[[PT/Templates/Modelo NPC]]** - Para personagens não-jogadores
-- **[[PT/Templates/Modelo Localização]]** - Para lugares e localizações
-- **[[PT/Templates/Modelo Notas de Sessão]]** - Para resumos de sessões
-- **[[PT/Templates/Modelo Item Mágico]]** - Para itens mágicos
 
 ---
 *"A névoa rola, e Barovia reclama mais uma alma..."*

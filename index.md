@@ -9,57 +9,50 @@ Welcome to the campaign wiki for **Curse of Strahd Reloaded**! This vault serves
 ## Quick Navigation
 
 ### 🎭 Characters
-- **[[EN/Characters/PCs/|Player Characters]]** - The brave souls trapped in Barovia
-- **[[EN/Characters/NPCs/|Non-Player Characters]]** - Allies, enemies, and everyone in between
+- **[[EN/Characters/NPCs/Ismark Kolyanovich|Ismark Kolyanovich]]** - Son of the burgomaster, village defender
+- **[[EN/Characters/NPCs/Ireena Kolyana|Ireena Kolyana]]** - Adopted daughter, troubled by nightmares
+- **[[EN/Characters/NPCs/Kolyan Indirovich|Kolyan Indirovich]]** - Village burgomaster
 
 ### 🏰 Locations
-- **[[EN/Locations/Barovia/|Barovia Region]]** - The cursed land itself
-- **[[EN/Locations/Castle Ravenloft/|Castle Ravenloft]]** - Strahd's fortress
-- **[[EN/Locations/Villages/|Villages & Towns]]** - Settlements of the damned
-- **[[EN/Locations/Other/|Other Locations]]** - Dungeons, landmarks, and more
+- **[[EN/Locations/Villages/Village of Barovia/Village of Barovia|Village of Barovia]]** - Central settlement and community hub
+- **[[EN/Locations/Villages/|Villages & Towns]]** - Other settlements (to be explored)
+- **[[EN/Locations/Other/|Other Locations]]** - Dungeons, landmarks, and more (to be discovered)
 
-### ⚔️ Items & Equipment
-- **[[EN/Items/Magic Items/|Magic Items]]** - Enchanted artifacts and weapons
-- **[[EN/Items/Mundane Items/|Mundane Items]]** - Regular equipment and supplies
+### ⚔️ Equipment & References
+- **[[Shared/5e-Reference/Index|5e Data References]]** - Game mechanics and stat blocks
+- **[[Shared/5e-Reference/Veteran|Veteran]]** - Common stat block for warriors
+- **[[Shared/5e-Reference/Longsword|Longsword]]** - Weapon statistics
 
-### 📚 Lore & Knowledge
-- **[[EN/Lore/History/|History]]** - The dark past of Barovia
-- **[[EN/Lore/Legends/|Legends & Myths]]** - Stories and folklore
-- **[[EN/Lore/Organizations/|Organizations]]** - Groups and factions
+### 📚 Campaign Resources
+- **[[EN/Templates/NPC Template|NPC Template]]** - For creating non-player characters  
+- **[[EN/Templates/Location Template|Location Template]]** - For places and locations
+- **[[EN/Templates/Session Note Template|Session Template]]** - For session recaps
+- **[[Data Extraction Guide|5e Data Extraction]]** - How to add more references
 
-### 🎲 Campaign Management
-- **[[EN/Sessions/Session Notes/|Session Notes]]** - Detailed session recaps
-- **[[EN/Sessions/Planning/|Planning]]** - Upcoming sessions and prep work
-- **[[EN/Mechanics/Rules/|Rules & Mechanics]]** - Game rules and clarifications
-- **[[EN/Mechanics/Homebrew/|Homebrew Content]]** - Custom rules and content
-
-### 📖 References
-- **[[Shared/Maps/|Maps]]** - Visual references and battle maps
-- **[[EN/References/Handouts/|Handouts]]** - Player handouts and documents
+### 🛠️ Utilities
+- **[[Language Guide|Multi-Language Guide]]** - How to use EN/PT system
+- **[[scripts/README|Data Scripts]]** - Technical documentation
 
 ## Recent Updates
-<!-- Add links to recently modified pages here -->
+- **[[EN/Characters/NPCs/Ismark Kolyanovich|Ismark Kolyanovich]]** - Updated for current campaign timeline
+- **[[EN/Characters/NPCs/Ireena Kolyana|Ireena Kolyana]]** - Added with vampire folklore
+- **[[EN/Characters/NPCs/Kolyan Indirovich|Kolyan Indirovich]]** - Burgomaster character profile
+- **[[EN/Locations/Villages/Village of Barovia/Village of Barovia|Village of Barovia]]** - Central settlement details
+- **[[Shared/5e-Reference/Index|5e References]]** - Game data extraction system
 
 ## Campaign Status
-- **Current Session:** 
-- **Current Location:** 
+- **Current Session:** Post-Barricade Defense
+- **Current Location:** [[EN/Locations/Villages/Village of Barovia/Village of Barovia|Village of Barovia]]
 - **Active Plot Threads:**
-  - 
-  - 
-  - 
+  - Ireena's mysterious nightmares and stalker
+  - Village defense and community cooperation
+  - Burgomaster's increasing reclusion
 
 ## Quick Stats
 - **Party Level:** 
 - **Deaths:** 
 - **Days in Barovia:** 
 
-## Templates
-Use these templates to create new content:
-- **[[EN/Templates/PC Template]]** - For player characters
-- **[[EN/Templates/NPC Template]]** - For non-player characters  
-- **[[EN/Templates/Location Template]]** - For places and locations
-- **[[EN/Templates/Session Note Template]]** - For session recaps
-- **[[EN/Templates/Magic Item Template]]** - For magical items
 
 ---
 *"The fog rolls in, and Barovia claims another soul..."*

@@ -9,6 +9,7 @@ Usage:
     python dnd_data_extractor.py --type creature --name "Ismark Kolyanovich"
     python dnd_data_extractor.py --type item --name "Longsword"
     python dnd_data_extractor.py --type spell --name "Magic Missile"
+    python dnd_data_extractor.py --type race --name "Human"
     python dnd_data_extractor.py --extract-cos-data  # Extract all CoS-related data
 """
 
@@ -51,6 +52,9 @@ class DnDDataExtractor:
                 'spells/spells-phb.json',
                 'spells/spells-xge.json',
                 'spells/spells-tce.json'
+            ],
+            'races': [
+                'races.json'
             ],
             'adventures': [
                 'adventure/adventure-cos.json'
@@ -128,6 +132,41 @@ class DnDDataExtractor:
                     return spell
         
         return None
+
+    def find_race(self, name: str) -> Optional[Dict]:
+        """Find a race by name in race files, prioritizing XPHB over PHB."""
+        # Define source priority order (XPHB first, then PHB, then others)
+        source_priority = ['XPHB', 'PHB', 'SCAG', 'VGM', 'MPMM', 'XGE', 'TCE']
+        
+        found_races = []
+        
+        for source_file in self.data_sources['races']:
+            data = self.load_json_data(source_file)
+            if not data or 'race' not in data:
+                continue
+                
+            for race in data['race']:
+                if race.get('name', '').lower() == name.lower():
+                    race['_source_file'] = source_file
+                    found_races.append(race)
+        
+        if not found_races:
+            return None
+        
+        # If only one race found, return it
+        if len(found_races) == 1:
+            return found_races[0]
+        
+        # Sort by source priority
+        def get_priority(race):
+            source = race.get('source', 'ZZZ')  # ZZZ ensures unknown sources go last
+            try:
+                return source_priority.index(source)
+            except ValueError:
+                return len(source_priority)  # Unknown sources go to end
+        
+        sorted_races = sorted(found_races, key=get_priority)
+        return sorted_races[0]
 
     def format_ability_score(self, score: int) -> str:
         """Format ability score with modifier."""
@@ -279,8 +318,31 @@ class DnDDataExtractor:
         content = tag[2:-1]  # Remove {@...}
         parts = content.split('|')
         
-        # Return the first part (usually the display text)
-        return parts[0] if parts else tag
+        # Handle specific tag types
+        tag_type = parts[0].split(' ')[0] if parts else ''
+        
+        if tag_type in ['variantrule', 'rule']:
+            # For rules, return just the rule name
+            rule_name = ' '.join(parts[0].split(' ')[1:]) if len(parts[0].split(' ')) > 1 else parts[0]
+            return rule_name
+        elif tag_type == 'filter':
+            # For filters, return the filter text
+            return ' '.join(parts[0].split(' ')[1:]) if len(parts[0].split(' ')) > 1 else parts[0]
+        elif tag_type == 'condition':
+            # For conditions, return just the condition name
+            condition_name = ' '.join(parts[0].split(' ')[1:]) if len(parts[0].split(' ')) > 1 else parts[0]
+            return condition_name
+        elif tag_type == 'dice':
+            # For dice, return just the dice notation
+            dice_notation = ' '.join(parts[0].split(' ')[1:]) if len(parts[0].split(' ')) > 1 else parts[0]
+            return dice_notation
+        elif tag_type == 'action':
+            # For actions, return just the action name
+            action_name = ' '.join(parts[0].split(' ')[1:]) if len(parts[0].split(' ')) > 1 else parts[0]
+            return action_name
+        else:
+            # Return the first part (usually the display text)
+            return parts[0] if parts else tag
 
     def create_creature_page(self, creature: Dict, language: str = 'EN') -> str:
         """Create a formatted creature page in markdown."""
@@ -384,6 +446,143 @@ class DnDDataExtractor:
         
         return '\n'.join(content)
 
+    def create_race_page(self, race: Dict, language: str = 'EN') -> str:
+        """Create a formatted race page in markdown with comprehensive player information."""
+        name = race.get('name', 'Unknown')
+        source = race.get('source', 'Unknown')
+        
+        content = [
+            f"# {name}",
+            ""
+        ]
+        
+        # Basic race properties with XPHB-style formatting
+        if 'creatureTypes' in race:
+            types = race['creatureTypes']
+            if isinstance(types, list):
+                content.append(f"**Creature Types:** {', '.join(types)}")
+            else:
+                content.append(f"**Creature Types:** {types}")
+        
+        if 'size' in race:
+            sizes = race['size']
+            if isinstance(sizes, list):
+                size_str = ', '.join([str(s) for s in sizes])
+                content.append(f"**Size:** {size_str}")
+                # Add size description if available
+                if 'sizeEntry' in race:
+                    size_entry = race['sizeEntry']
+                    if isinstance(size_entry, dict) and 'entries' in size_entry:
+                        size_desc = self.format_entries(size_entry['entries'])
+                        content.append(f"({size_desc})")
+            else:
+                content.append(f"**Size:** {sizes}")
+        
+        if 'speed' in race:
+            speed = race['speed']
+            if isinstance(speed, dict):
+                if 'walk' in speed:
+                    content.append(f"**Speed:** {speed['walk']} feet")
+                else:
+                    speed_parts = []
+                    for move_type, distance in speed.items():
+                        speed_parts.append(f"{move_type} {distance} feet")
+                    content.append(f"**Speed:** {', '.join(speed_parts)}")
+            else:
+                content.append(f"**Speed:** {speed} feet")
+        
+        # Skill proficiencies
+        if 'skillProficiencies' in race:
+            skill_profs = race['skillProficiencies']
+            if isinstance(skill_profs, list) and skill_profs:
+                skill_info = skill_profs[0]
+                if 'choose' in skill_info:
+                    choose_info = skill_info['choose']
+                    count = choose_info.get('count', 1)
+                    content.append(f"**Skill Proficiencies:** You gain proficiency in {count} skill{'s' if count > 1 else ''} of your choice")
+                elif 'any' in skill_info:
+                    count = skill_info['any']
+                    content.append(f"**Skill Proficiencies:** You gain proficiency in {count} skill{'s' if count > 1 else ''} of your choice")
+        
+        # Feats (Origin feats from XPHB)
+        if 'feats' in race:
+            feats = race['feats']
+            if isinstance(feats, list) and feats:
+                feat_info = feats[0]
+                if 'any' in feat_info:
+                    count = feat_info['any']
+                    content.append(f"**Feats:** You gain {count} Origin feat{'s' if count > 1 else ''} of your choice")
+                elif 'anyFromCategory' in feat_info:
+                    category_info = feat_info['anyFromCategory']
+                    count = category_info.get('count', 1)
+                    content.append(f"**Feats:** You gain {count} Origin feat{'s' if count > 1 else ''} of your choice")
+        
+        content.append("")
+        
+        # Racial traits
+        if 'entries' in race:
+            content.append("## Racial Traits")
+            content.append("")
+            
+            for entry in race['entries']:
+                if isinstance(entry, dict):
+                    trait_name = entry.get('name', 'Trait')
+                    content.append(f"### {trait_name}")
+                    
+                    if 'entries' in entry:
+                        trait_description = self.format_entries(entry['entries'])
+                        content.append(trait_description)
+                    elif 'entry' in entry:
+                        content.append(entry['entry'])
+                    
+                    content.append("")
+                elif isinstance(entry, str):
+                    content.append(entry)
+                    content.append("")
+        
+        # Additional traits that might be at root level
+        if 'traitTags' in race:
+            content.append("## Additional Information")
+            content.append("")
+            traits = ', '.join(race['traitTags'])
+            content.append(f"**Trait Tags:** {traits}")
+            content.append("")
+        
+        # Languages
+        if 'languageProficiencies' in race:
+            lang_profs = race['languageProficiencies']
+            if isinstance(lang_profs, list) and lang_profs:
+                content.append("## Languages")
+                content.append("")
+                for lang_prof in lang_profs:
+                    if isinstance(lang_prof, dict):
+                        if 'common' in lang_prof:
+                            content.append("You can speak, read, and write Common.")
+                        if 'choose' in lang_prof:
+                            choose_info = lang_prof['choose']
+                            count = choose_info.get('count', 1)
+                            content.append(f"You can speak, read, and write {count} additional language{'s' if count > 1 else ''} of your choice.")
+                content.append("")
+        
+        # Size details if available
+        if 'size' in race and isinstance(race['size'], list):
+            for size_info in race['size']:
+                if isinstance(size_info, dict) and 'note' in size_info:
+                    content.append("## Size")
+                    content.append("")
+                    content.append(size_info['note'])
+                    content.append("")
+                    break
+        
+        # Tags and metadata
+        content.extend([
+            "---",
+            "**Tags:** #5e-reference #race #species",
+            f"**Source Data:** `{race.get('_source_file', 'unknown')}` - {source}"
+        ])
+        
+        return '\n'.join(content)
+
     def extract_cos_references(self) -> Dict[str, List[str]]:
         """Extract all references mentioned in Curse of Strahd adventure."""
         cos_data = self.load_json_data('adventure/adventure-cos.json')
@@ -435,6 +634,16 @@ class DnDDataExtractor:
                 with open(file_path, 'w', encoding='utf-8') as f:
                     f.write(content)
                 print(f"Created item reference: {file_path}")
+                return True
+        
+        elif extract_type == 'race':
+            data = self.find_race(name)
+            if data:
+                content = self.create_race_page(data, language)
+                file_path = self.reference_dir / f"{name.replace(' ', '_').lower()}.md"
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    f.write(content)
+                print(f"Created race reference: {file_path}")
                 return True
         
         print(f"Could not find {extract_type}: {name}")
@@ -502,9 +711,9 @@ def main():
     parser.add_argument('--vault-dir',
                        default='/home/jnunez/Projects/DnD/Vaults/curse-of-strahd',
                        help='Path to campaign vault directory')
-    parser.add_argument('--type', choices=['creature', 'item', 'spell'],
+    parser.add_argument('--type', choices=['creature', 'item', 'spell', 'race'],
                        help='Type of data to extract')
-    parser.add_argument('--name', help='Name of the creature/item/spell to extract')
+    parser.add_argument('--name', help='Name of the creature/item/spell/race to extract')
     parser.add_argument('--extract-cos-data', action='store_true',
                        help='Extract all data referenced in Curse of Strahd')
     parser.add_argument('--language', choices=['EN', 'PT'], default='EN',

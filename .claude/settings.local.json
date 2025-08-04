@@ -4,7 +4,10 @@
       "Bash(mkdir:*)",
       "Bash(mv:*)",
       "Bash(true)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(rm:*)",
+      "Bash(find:*)",
+      "Bash(jq:*)"
     ],
     "deny": [],
     "additionalDirectories": [
