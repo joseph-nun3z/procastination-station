@@ -14,20 +14,20 @@
 ## Personalidade
 - **Traços:** Ao contrário da maioria dos barovianos, Ismark não é tipicamente sombrio. É mais extrovertido e disposto a interagir com estranhos
 - **Ideais:** Proteger sua irmã adotiva Ireena e servir sua comunidade
-- **Vínculos:** Devotado a [[PT/Characters/NPCs/Ireena Kolyana|Ireena Kolyana]] e à memória de seu pai, Kolyan Indirovich
+- **Vínculos:** Devotado a [[PT/Characters/NPCs/Ireena Kolyana|Ireena Kolyana]] e seu pai, Kolyan Indirovich
 - **Defeitos:** Vive à sombra de seu pai, ganhando o apelido de "Ismark, o Menor"
 
 ## História e Passado
-Ismark é filho do burgomestre da aldeia, Kolyan Indirovich, e passou a maior parte de sua vida adulta treinando com armas na esperança de um dia confrontar e matar Strahd. Quando seu pai morreu, o fardo de proteger tanto a aldeia quanto sua irmã adotiva Ireena recaiu sobre ele.
+Ismark é filho do burgomestre da aldeia, Kolyan Indirovich, e passou a maior parte de sua vida adulta treinando com armas na esperança de um dia confrontar e matar Strahd. Ele serve como braço direito de seu pai na proteção tanto da aldeia quanto de sua irmã adotiva Ireena das crescentes ameaças que os cercam.
 
 ## Papel na Campanha
 - **Importância:** Principal
 - **Relação com os PCs:** Aliado potencial e guia
 - **Objetivos/Motivações:** 
   - Proteger Ireena dos avanços de Strahd
-  - Escoltar Ireena com segurança até Vallaki
+  - Auxiliar seu pai na defesa da aldeia
   - Eventualmente confrontar e derrotar Strahd
-  - Tornar-se um sucessor digno de seu pai
+  - Provar-se digno do nome Kolyanovich
 
 ## Estatísticas e Habilidades
 *Baseado no bloco de estatísticas do [[Shared/5e-Reference/Veteran|Veterano]] (MM p.350)*
@@ -60,27 +60,27 @@ Ismark é filho do burgomestre da aldeia, Kolyan Indirovich, e passou a maior pa
 - Pode verificar se qualquer carta supostamente de seu pai é genuína ou falsa
 
 ### Segredos do Mestre
+- Seu pai Kolyan está na verdade morto (desconhecido pelo grupo e pela maioria dos aldeões)
+- Descobrirá a morte de seu pai ao retornar à mansão
 - Pode servir como aliado de longo prazo se os PCs ganharem sua confiança
-- Disposto a acompanhar o grupo uma vez que Ireena esteja segura
-- Se sobreviver à aventura, torna-se o novo burgomestre de Barovia
 - Age como membro do grupo para fins de cálculo de XP (mas não ganha XP)
 
 ## Personagens Relacionados
 - **[[PT/Characters/NPCs/Ireena Kolyana|Ireena Kolyana]]** - Irmã adotiva, sua principal preocupação
-- **Kolyan Indirovich** - Pai falecido, ex-burgomestre
-- **[[PT/Characters/NPCs/Donavich|Donavich]]** - Sacerdote local que pode ajudar com o enterro de seu pai
+- **Kolyan Indirovich** - Pai, burgomestre atual
+- **[[PT/Characters/NPCs/Donavich|Donavich]]** - Sacerdote local e conselheiro espiritual
 
 ## Localizações Relacionadas
 - **[[PT/Locations/Villages/Aldeia de Barovia|Aldeia de Barovia]]** - Sua aldeia natal
 - **[[PT/Locations/Villages/Taverna Sangue da Vinha|Taverna Sangue da Vinha]]** - Onde frequentemente pode ser encontrado
 - **[[PT/Locations/Villages/Mansão do Burgomestre|Mansão do Burgomestre]]** - Casa da família onde Ireena fica
-- **[[PT/Locations/Villages/Vallaki|Vallaki]]** - Destino pretendido para a segurança de Ireena
+- **[[PT/Locations/Villages/Vallaki|Vallaki]]** - Assentamento distante, rumores dizem ser mais seguro
 
 ## Ganchos de Aventura
-- Pede aos PCs para ajudar a proteger e escoltar Ireena para segurança
-- Precisa de ajuda para enterrar seu pai adequadamente no cemitério
+- Pede aos PCs para ajudar a proteger Ireena das crescentes ameaças
 - Pode fornecer conhecimento local e servir como guia
-- Aliado potencial de longo prazo na luta contra Strahd
+- Aliado potencial na defesa da aldeia
+- Pode buscar ajuda para investigar ocorrências estranhas em Barovia
 
 ## Referências
 - **5e-data:** `bestiary-cos.json` - Entrada de Ismark Kolyanovich

@@ -14,20 +14,20 @@
 ## Personality
 - **Traits:** Unlike most Barovians, Ismark isn't typically dour. He's more outgoing and willing to engage with strangers
 - **Ideals:** Protecting his adopted sister Ireena and serving his community
-- **Bonds:** Devoted to [[EN/Characters/NPCs/Ireena Kolyana|Ireena Kolyana]] and the memory of his father, Kolyan Indirovich
+- **Bonds:** Devoted to [[EN/Characters/NPCs/Ireena Kolyana|Ireena Kolyana]] and his father, Kolyan Indirovich
 - **Flaws:** Lives in the shadow of his father, earning him the nickname "Ismark the Lesser"
 
 ## Background & History
-Ismark is the son of the village burgomaster, Kolyan Indirovich, and has spent most of his adult life training with weapons in the hope of one day confronting and killing Strahd. When his father died, the burden of protecting both the village and his adopted sister Ireena fell to him.
+Ismark is the son of the village burgomaster, Kolyan Indirovich, and has spent most of his adult life training with weapons in the hope of one day confronting and killing Strahd. He serves as his father's right hand in protecting both the village and his adopted sister Ireena from the growing threats that surround them.
 
 ## Role in Campaign
 - **Importance:** Major
 - **Relationship to PCs:** Potential ally and guide
 - **Goals/Motivations:** 
   - Protect Ireena from Strahd's advances
-  - Escort Ireena safely to Vallaki
+  - Assist his father in defending the village
   - Eventually confront and defeat Strahd
-  - Become a worthy successor to his father
+  - Prove himself worthy of the Kolyanovich name
 
 ## Stats & Abilities
 *Based on [[Shared/5e-Reference/Veteran|Veteran]] stat block (MM p.350)*
@@ -60,27 +60,27 @@ Ismark is the son of the village burgomaster, Kolyan Indirovich, and has spent m
 - Can verify that any letter allegedly from his father is genuine or forged
 
 ### DM Secrets
+- His father Kolyan is actually dead (unknown to party and most villagers)
+- Will discover his father's death when returning to the mansion
 - Can serve as a long-term ally if the PCs earn his trust
-- Willing to accompany the party once Ireena is safe
-- If he survives the adventure, becomes the new burgomaster of Barovia
 - Acts as a party member for XP calculation purposes (but gains no XP himself)
 
 ## Related Characters
 - **[[EN/Characters/NPCs/Ireena Kolyana|Ireena Kolyana]]** - Adopted sister, his primary concern
-- **Kolyan Indirovich** - Deceased father, former burgomaster
-- **[[EN/Characters/NPCs/Donavich|Donavich]]** - Local priest who can help with his father's burial
+- **Kolyan Indirovich** - Father, current burgomaster
+- **[[EN/Characters/NPCs/Donavich|Donavich]]** - Local priest and spiritual advisor
 
 ## Related Locations
 - **[[EN/Locations/Villages/Village of Barovia|Village of Barovia]]** - His home village
 - **[[EN/Locations/Villages/Blood on the Vine Tavern|Blood on the Vine Tavern]]** - Where he can often be found
 - **[[EN/Locations/Villages/Burgomaster's Mansion|Burgomaster's Mansion]]** - Family home where Ireena stays
-- **[[EN/Locations/Villages/Vallaki|Vallaki]]** - Intended destination for Ireena's safety
+- **[[EN/Locations/Villages/Vallaki|Vallaki]]** - Distant settlement, rumored to be safer
 
 ## Adventure Hooks
-- Asks the PCs to help protect and escort Ireena to safety
-- Needs help burying his father properly in the cemetery
+- Asks the PCs to help protect Ireena from increasing threats
 - Can provide local knowledge and serve as a guide
-- Potential long-term ally in the fight against Strahd
+- Potential ally in defending the village
+- May seek help in investigating strange occurrences around Barovia
 
 ## References
 - **5e-data:** `bestiary-cos.json` - Ismark Kolyanovich entry
