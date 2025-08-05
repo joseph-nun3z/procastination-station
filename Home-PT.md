@@ -12,16 +12,24 @@ Bem-vindos à wiki da campanha **Curse of Strahd Reloaded**! Este cofre serve co
 - **[[PT/Characters/NPCs/Ismark Kolyanovich|Ismark Kolyanovich]]** - Filho do burgomestre, defensor da aldeia
 - **[[PT/Characters/NPCs/Ireena Kolyana|Ireena Kolyana]]** - Filha adotiva, atormentada por pesadelos
 - **[[PT/Characters/NPCs/Kolyan Indirovich|Kolyan Indirovich]]** - Burgomestre da aldeia
+- **[[PT/Characters/NPCs/Donavich|Donavich]]** - Padre da aldeia, guardião da igreja
+- **[[PT/Characters/NPCs/Bildrath|Bildrath]]** - Comerciante da aldeia, dono do mercantil
+- **[[PT/Characters/NPCs/Parriwimple|Parriwimple]]** - Assistente da loja, sobrinho do Bildrath
 
 ### 🏰 Localizações
-- **[[EN/Locations/Villages/Village of Barovia/Village of Barovia|Aldeia de Barovia]]** - Assentamento central e centro comunitário
-- **[[PT/Locations/Villages/|Aldeias e Cidades]]** - Outros assentamentos (a serem explorados)
-- **[[PT/Locations/Other/|Outras Localizações]]** - Masmorras, marcos e mais (a serem descobertos)
+- **[[PT/Locations/Villages/Aldeia de Barovia/Aldeia de Barovia|Aldeia de Barovia]]** - Assentamento central e centro comunitário
+- **[[PT/Locations/Villages/Aldeia de Barovia/Igreja|Igreja]]** - Igreja da aldeia, domínio do Donavich
+- **[[PT/Locations/Villages/Aldeia de Barovia/Mansão do Burgomestre|Mansão do Burgomestre]]** - Residência da família Kolyan
+- **[[PT/Locations/Villages/Aldeia de Barovia/Mercantil do Bildrath|Mercantil do Bildrath]]** - Loja geral da aldeia
+- **[[PT/Locations/Villages/|Outras Aldeias]]** - Assentamentos ainda a serem explorados
+- **[[PT/Locations/Other/|Outras Localizações]]** - Masmorras, marcos e mistérios
 
 ### ⚔️ Equipamentos e Referências
 - **[[Shared/5e-Reference/Index|Referências de Dados 5e]]** - Mecânicas de jogo e blocos de estatísticas
-- **[[Shared/5e-Reference/Veteran|Veterano]]** - Bloco de estatísticas comum para guerreiros
-- **[[Shared/5e-Reference/Longsword|Espada Longa]]** - Estatísticas de armas
+- **[[Shared/5e-Reference/human|Humano]]** - Informações de espécie para jogadores
+- **[[Shared/5e-Reference/halfling|Halfling]]** - Informações de espécie para jogadores
+- **[[Shared/5e-Reference/veteran|Veterano]]** - Bloco de estatísticas de veterano de combate
+- **[[Shared/5e-Reference/longsword|Espada Longa]]** - Estatísticas de arma padrão
 
 ### 📚 Recursos da Campanha
 - **[[PT/Templates/Modelo NPC|Modelo NPC]]** - Para criar personagens não-jogadores
@@ -34,24 +42,28 @@ Bem-vindos à wiki da campanha **Curse of Strahd Reloaded**! Este cofre serve co
 - **[[scripts/README|Scripts de Dados]]** - Documentação técnica
 
 ## Atualizações Recentes
-- **[[PT/Characters/NPCs/Ismark Kolyanovich|Ismark Kolyanovich]]** - Atualizado para cronologia atual da campanha
-- **[[PT/Characters/NPCs/Ireena Kolyana|Ireena Kolyana]]** - Adicionado com folclore de vampiros
-- **[[PT/Characters/NPCs/Kolyan Indirovich|Kolyan Indirovich]]** - Perfil do personagem burgomestre
-- **[[EN/Locations/Villages/Village of Barovia/Village of Barovia|Aldeia de Barovia]]** - Detalhes do assentamento central
-- **[[Shared/5e-Reference/Index|Referências 5e]]** - Sistema de extração de dados do jogo
+- **Estrutura de Localizações Reorganizada** - Aldeias agora organizadas adequadamente com sub-localizações
+- **[[PT/Characters/NPCs/Bildrath|Bildrath]] & [[PT/Characters/NPCs/Parriwimple|Parriwimple]]** - Novos personagens comerciantes adicionados
+- **[[PT/Locations/Villages/Aldeia de Barovia/Mercantil do Bildrath|Mercantil do Bildrath]]** - Localização da loja da aldeia adicionada
+- **Páginas de NPCs Revisadas** - Removido conteúdo spoiler, tornadas amigáveis aos jogadores
+- **[[Shared/5e-Reference/human|Humano]] & [[Shared/5e-Reference/halfling|Halfling]]** - Referências de raça atualizadas com dados XPHB
+- **Integração de Imagens** - Imagens de personagens agora adequadamente integradas ao cofre
 
 ## Estado da Campanha
 - **Sessão Atual:** Pós-Defesa da Barricada
-- **Localização Atual:** [[EN/Locations/Villages/Village of Barovia/Village of Barovia|Aldeia de Barovia]]
-- **Tramas Ativas:**
-  - Pesadelos misteriosos de Ireena e perseguidor
-  - Defesa da aldeia e cooperação comunitária
-  - Reclusão crescente do burgomestre
+- **Localização Atual:** [[PT/Locations/Villages/Aldeia de Barovia/Aldeia de Barovia|Aldeia de Barovia]]
+- **Status do Grupo:** Todos os membros vivos e bem (Nível 3)
+- **Situações Ativas:**
+  - Preparações de defesa da aldeia e cooperação comunitária
+  - Reclusão preocupante e saúde do burgomestre
+  - Explorando recursos da aldeia e construindo relacionamentos
 
-## Estatísticas Rápidas
-- **Nível do Grupo:** 
-- **Mortes:** 
-- **Dias em Barovia:** 
+## Estatísticas da Campanha
+- **Nível do Grupo:** 3
+- **Mortes do Grupo:** 0
+- **Dias em Barovia:** 1
+- **NPCs Principais Conhecidos:** Ismark, Ireena, Donavich, Bildrath, Parriwimple
+- **Localizações Exploradas:** Aldeia de Barovia (Mansão do Burgomestre, Mercantil do Bildrath) 
 
 
 ---
