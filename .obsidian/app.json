@@ -13,5 +13,8 @@
   "foldIndent": true,
   "showFrontmatter": true,
   "showIndentGuide": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "userIgnoreFilters": [
+    ".dm-notes/"
+  ]
 }

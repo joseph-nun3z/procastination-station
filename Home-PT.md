@@ -9,12 +9,15 @@ Bem-vindos à wiki da campanha **Curse of Strahd Reloaded**! Este cofre serve co
 ## Navegação Rápida
 
 ### 🎭 Personagens
-- **[[PT/Characters/NPCs/Ismark Kolyanovich|Ismark Kolyanovich]]** - Filho do burgomestre, defensor da aldeia
-- **[[PT/Characters/NPCs/Ireena Kolyana|Ireena Kolyana]]** - Filha adotiva, atormentada por pesadelos
-- **[[PT/Characters/NPCs/Kolyan Indirovich|Kolyan Indirovich]]** - Burgomestre da aldeia
-- **[[PT/Characters/NPCs/Donavich|Donavich]]** - Padre da aldeia, guardião da igreja
+- **[[PT/Characters/NPCs/Ismark Kolyanovich|Ismark Kolyanovich]]** - Filho do burgomestre, defensor da aldeia, novo burgomestre
+- **[[PT/Characters/NPCs/Ireena Kolyana|Ireena Kolyana]]** - Filha adotiva, carrega marcas de mordida de Strahd
+- **[[PT/Characters/NPCs/Kolyan Indirovich|Kolyan Indirovich]]** - Antigo burgomestre (falecido)
+- **[[PT/Characters/NPCs/Donavich|Donavich]]** - Padre da aldeia, pai de Doru
+- **[[PT/Characters/NPCs/Doru|Doru]]** - Cria vampírica lutando por sua alma, aprisionado na cripta da igreja
 - **[[PT/Characters/NPCs/Bildrath|Bildrath]]** - Comerciante da aldeia, dono do mercantil
-- **[[PT/Characters/NPCs/Parriwimple|Parriwimple]]** - Assistente da loja, sobrinho do Bildrath
+- **[[PT/Characters/NPCs/Parriwimple|Parriwimple]]** - Assistente da loja (falecido, morreu defendendo a barricada ocidental)
+- **[[PT/Characters/NPCs/Strahd von Zarovich|Strahd von Zarovich]]** - O Diabo do Castelo Ravenloft
+- **[[PT/Characters/NPCs/Rahadin|Rahadin]]** - Camareiro de Strahd, elfo do crepúsculo com coral da morte
 
 ### 🏰 Localizações
 - **[[PT/Locations/Villages/Aldeia de Barovia/Aldeia de Barovia|Aldeia de Barovia]]** - Assentamento central e centro comunitário
@@ -42,28 +45,30 @@ Bem-vindos à wiki da campanha **Curse of Strahd Reloaded**! Este cofre serve co
 - **[[scripts/README|Scripts de Dados]]** - Documentação técnica
 
 ## Atualizações Recentes
-- **Estrutura de Localizações Reorganizada** - Aldeias agora organizadas adequadamente com sub-localizações
-- **[[PT/Characters/NPCs/Bildrath|Bildrath]] & [[PT/Characters/NPCs/Parriwimple|Parriwimple]]** - Novos personagens comerciantes adicionados
-- **[[PT/Locations/Villages/Aldeia de Barovia/Mercantil do Bildrath|Mercantil do Bildrath]]** - Localização da loja da aldeia adicionada
-- **Páginas de NPCs Revisadas** - Removido conteúdo spoiler, tornadas amigáveis aos jogadores
-- **[[Shared/5e-Reference/human|Humano]] & [[Shared/5e-Reference/halfling|Halfling]]** - Referências de raça atualizadas com dados XPHB
-- **Integração de Imagens** - Imagens de personagens agora adequadamente integradas ao cofre
+- **[[PT/Characters/NPCs/Rahadin|Rahadin]]** - Camareiro de Strahd encontrado após batalha da barricada ocidental
+- **[[PT/Characters/NPCs/Doru|Doru]]** - Cria vampírica revelada na cripta da igreja, resistiu com sucesso à sede de sangue
+- **[[PT/Characters/NPCs/Parriwimple|Parriwimple]]** - Morreu heroicamente defendendo a barricada ocidental
+- **[[PT/Characters/NPCs/Kolyan Indirovich|Kolyan Indirovich]]** - Burgomestre morto por Strahd, enterrado no cemitério da igreja
+- **[[PT/Characters/NPCs/Ireena Kolyana|Ireena]]** - Marcas de mordida reveladas, preparando-se para partir para Vallaki
 
 ## Estado da Campanha
-- **Sessão Atual:** Pós-Defesa da Barricada
+- **Sessão Atual:** B5j - Colina de Lugdana (Preparando-se para partir para Tser Pool)
 - **Localização Atual:** [[PT/Locations/Villages/Aldeia de Barovia/Aldeia de Barovia|Aldeia de Barovia]]
-- **Status do Grupo:** Todos os membros vivos e bem (Nível 3)
+- **Status do Grupo:** Todos os membros vivos (Nível 3)
 - **Situações Ativas:**
-  - Preparações de defesa da aldeia e cooperação comunitária
-  - Reclusão preocupante e saúde do burgomestre
-  - Explorando recursos da aldeia e construindo relacionamentos
+  - Kolyan enterrado, Ismark agora é burgomestre
+  - Ireena juntando-se ao grupo para viajar a Vallaki
+  - Doru vivo mas aprisionado na cripta da igreja, lutando contra sua natureza
+  - Viagem a Tser Pool para encontrar Madame Eva planejada
+  - Gertruda desaparecida, vista pela última vez indo em direção a Vallaki
 
 ## Estatísticas da Campanha
 - **Nível do Grupo:** 3
 - **Mortes do Grupo:** 0
-- **Dias em Barovia:** 1
-- **NPCs Principais Conhecidos:** Ismark, Ireena, Donavich, Bildrath, Parriwimple
-- **Localizações Exploradas:** Aldeia de Barovia (Mansão do Burgomestre, Mercantil do Bildrath) 
+- **Mortes de NPCs:** Kolyan Indirovich (Strahd), Parriwimple (barricada ocidental)
+- **Dias em Barovia:** 2
+- **NPCs Principais Conhecidos:** Ismark, Ireena, Donavich, Doru, Rahadin, Strahd (brevemente no cruzamento)
+- **Localizações Exploradas:** Aldeia de Barovia (Mansão, Mercantil, Igreja, Cemitério) 
 
 
 ---
