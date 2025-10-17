@@ -37,8 +37,15 @@ Sua natureza simples o torna querido por alguns aldeões que veem sua bondade ge
 - **[[PT/Locations/Villages/Aldeia de Barovia/Aldeia de Barovia|Aldeia de Barovia]]** - Sua comunidade lar
 - **Ruas da Aldeia** - Onde faz entregas e cumpre tarefas
 
-## Situação Atual
-Parriwimple perdeu a vida em defensa da Aldeida de Barovia ao tentar parar o avaço dos mortos vivos
+## Morte na Barricada Ocidental
+Parriwimple morreu heroicamente durante o cerco da Barricada Ocidental, defendendo a aldeia da horda morta-viva. Apesar de sua natureza simples, ele permaneceu corajosamente ao lado dos defensores quando o propagador de peste zumbi e as forças mortas-vivas atacaram.
+
+Sua morte afetou profundamente:
+- **[[PT/Characters/NPCs/Bildrath|Bildrath]]** - Perdeu seu sobrinho, apesar do relacionamento complicado
+- **A Aldeia** - Lamentou a perda de uma alma inocente e de bom coração
+- **O Grupo** - Testemunhou a bravura de um homem simples diante do horror avassalador
+
+Os momentos finais de Parriwimple mostraram sua verdadeira coragem - um homem simples lutando por sua casa e pelas pessoas que amava.
 
 ## Referências
 - **Referência do Livro:** Curse of Strahd, Aldeia de Barovia

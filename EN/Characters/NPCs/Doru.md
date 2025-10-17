@@ -1,22 +1,29 @@
 # Doru
 
 ## Basic Information
-- **Race:** [[Shared/5e-Reference/human|Human]]
+- **Race:** [[Shared/5e-Reference/human|Human]] (Vampire Spawn)
 - **Class/Occupation:** Revolutionary Leader *(formerly)*
-- **Age:** Young adult *(at time of disappearance)*
-- **Location:** Unknown *(presumed dead)*
-- **Status:** Missing, presumed deceased
+- **Age:** Young adult
+- **Location:** Church Undercroft, [[EN/Locations/Villages/Village of Barovia/Village of Barovia|Village of Barovia]]
+- **Status:** Undead (Vampire Spawn) - Alive and fighting his nature
 - **Relationship:** Son of [[EN/Characters/NPCs/Donavich|Donavich]], fiancé of [[EN/Characters/NPCs/Gertruda|Gertruda]]
 
-## Physical Description
-- **Appearance:** *(According to villager memories)* A passionate young man with his father's earnest eyes
-- **Notable Features:** Remembered for his inspiring presence and determined expression
+## Physical Description *(Current State)*
+- **Appearance:** Ghostly pale skin with dirt and grime streaked across his face, youthful features strikingly reminiscent of Father Donavich
+- **Notable Features:**
+  - Red, bloodshot eyes
+  - Pointed fangs
+  - Ripped and worn clothes
+  - Unkempt hair in tangles and knots
+  - Wears his father's holy symbol - a bloodstained bronze sunburst on a leather cord
+  - Emaciated and gaunt from resisting bloodlust
 
-## Personality *(As Remembered)*
-- **Traits:** Charismatic leader, passionate about justice, perhaps too idealistic
-- **Ideals:** Freedom from oppression, protecting the innocent
-- **Bonds:** Devoted to [[EN/Characters/NPCs/Donavich|his father]], deeply in love with [[EN/Characters/NPCs/Gertruda|Gertruda]]
-- **Flaws:** Reckless bravery, underestimated the true danger he faced
+## Personality *(Current State)*
+- **Traits:** Desperately fighting his vampiric nature, guilt-ridden, determined to prove his soul still exists
+- **Ideals:** Still believes in protecting the innocent, wants to reconcile with his father
+- **Bonds:** Devoted to [[EN/Characters/NPCs/Donavich|his father]], deeply in love with [[EN/Characters/NPCs/Gertruda|Gertruda]], clings to father's holy symbol for strength
+- **Flaws:** Constantly battling bloodlust, carries enormous guilt for the failed revolution
+- **Current Struggle:** Forced to obey Strahd's direct commands, fights every day to resist predatory urges
 
 ## Background & History
 Doru was the beloved son of the village priest [[EN/Characters/NPCs/Donavich|Donavich]] and grew up as one of Barovia's most promising young men. He was engaged to [[EN/Characters/NPCs/Gertruda|Gertruda]], daughter of Mary, and their wedding was eagerly anticipated by the entire village.
@@ -52,25 +59,32 @@ The villagers share various memories of Doru:
 - **[[EN/Locations/Villages/Village of Barovia/Village of Barovia|Village of Barovia]]** - His home, where his memory lingers
 - **Unknown Location** - Where the revolution met its end
 
-## Current Situation
-Doru's disappearance continues to cast a shadow over the village:
-- His father Donavich remains deeply troubled and withdrawn since his loss
-- The circumstances of what happened to the revolutionaries remain largely unknown
-- His disappearance is connected to the recent troubles affecting Gertruda and other villagers
-- The village still mourns the loss of their young revolutionary and the hope he represented
+## The Truth Revealed - Encounter in the Undercroft
+The party discovered the horrifying truth: Doru is trapped in the church undercroft, transformed into a vampire spawn by Strahd. However, against all odds, **his soul remains intact** - he is fighting desperately to maintain his humanity.
 
-## Local Memorial *(Unofficial)*
-Though there's no formal memorial, the villagers remember Doru through:
-- Stories shared in hushed conversations
-- His father's continued grief and changed demeanor
-- The empty space where his wedding should have been
-- A reminder of both hope and its dangers
+### What Doru Revealed to the Party:
+- **About Van Richten**: A foreign scholar calling himself "Alanik Ray" was actually the legendary vampire hunter Dr. Rudolph van Richten. Doru discovered his true identity and convinced him to lead the revolution
+- **About the Revolution**: Van Richten reluctantly agreed to help. Doru and his friend Escher assembled over two dozen fighters
+- **The Betrayal**: When they opened Strahd's crypt, Escher was missing and the coffin was empty. Strahd emerged from shadows and slaughtered most of the mob
+- **His Transformation**: Doru was turned into a vampire spawn. Strahd forced him to drink the blood of his former companions for nearly three months
+- **Escher's Fate**: Doru insists Escher didn't betray them
+- **Van Richten's Fate**: Unknown - Doru was forced to confess Van Richten's identity under interrogation
+- **Strahd's Command**: Six nights ago, Strahd commanded Doru to return to the church and his father
 
-> **Note:** All information about Doru comes from village memories, survivor accounts, and the ongoing grief of those who loved him. The true details of what happened during the revolution remain largely unknown.
+### The Test - Proving His Humanity
+Doru asked the party to expose him to fresh blood to prove he could resist his vampiric urges:
+- **Result**: He successfully resisted, proving his soul still fights within
+- **Prayer**: Whispered prayers to the Morninglord and Gertruda's name while fighting temptation
+- **The Holy Symbol**: Clings to his father's bronze sunburst for strength and willpower
+- **His Request**: Asked the party to tell Father Donavich that his son is still alive
 
-## References
-- **Village Lore:** Survivor accounts and family memories
-- **Book Reference:** Curse of Strahd - related to village backstory
+### Current Situation
+- **Location**: Remains imprisoned in the church undercroft by choice
+- **Condition**: Emaciated from resisting blood, slowly starving but maintaining control
+- **Father's Belief**: Donavich believes Doru is soul is there but nothing else
+- **Hope**: Demonstrated he can resist vampiric urges, proving redemption may be possible
+- **Penance**: Views his imprisonment as penance for his hubris in leading the failed revolution
+- **Gertruda**: Devastated to learn she left to find him, now missing
 
 ---
 **Tags:** #npc #missing #presumed-dead #revolutionary #tragic-figure #barovia

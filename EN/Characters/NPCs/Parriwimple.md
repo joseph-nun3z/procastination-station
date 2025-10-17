@@ -74,8 +74,15 @@ His simple nature allows him to notice things others might miss:
 - **[[EN/Locations/Villages/Village of Barovia/Village of Barovia|Village of Barovia]]** - His home community
 - **Village Streets** - Where he makes deliveries and runs errands
 
-## Current Situation
-- Perriwimple perished when trying to defend the village at the barricade, killed by living death
+## Death at the Western Barricade
+Parriwimple died heroically during the siege of the Western Barricade, defending the village from the undead horde. Despite his simple nature, he stood bravely alongside the defenders when the zombie plague spreader and undead forces attacked.
+
+His death deeply affected:
+- **[[EN/Characters/NPCs/Bildrath|Bildrath]]** - Lost his nephew, despite their complicated relationship
+- **The Village** - Mourned the loss of an innocent, good-hearted soul
+- **The Party** - Witnessed a simple man's bravery in the face of overwhelming horror
+
+Parriwimple's final moments showed his true courage - a simple man fighting for his home and the people he loved.
 
 ## Village Kindnesses *(Good Treatment)*
 Some villagers who treat Parriwimple well:
